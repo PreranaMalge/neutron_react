@@ -14,6 +14,9 @@ const Menubar = ()=>{
                     <Link to='/bollywood' className='nav-link btn btn-outline-success'>Bollywood</Link>
                     <Link to='/liftstate' className='nav-link btn btn-outline-success'>Lift State</Link>
                     <Link to='/emi' className='nav-link btn btn-outline-success'>EMI</Link>
+                    <Link to='/refclass' className='nav-link btn btn-outline-success'>RefClass</Link>
+                    <Link to='./reffn' className='nav-link btn btn-outline-success'>RefFn</Link>
+                    <Link to='./formfn' className='nav-link btn btn-outline-success'>FormFn</Link>
                 </Navbar>
             </div>
             </div>

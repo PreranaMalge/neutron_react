@@ -10,6 +10,13 @@ import Bollywood from './Bollywood';
 import LiftState from './LiftState';
 import EMI from './EMI/EMI';
 
+import RefClass from './RefClass'
+import RefFn from './RefFn';
+import FormFn from './FormFn';
+
+
+
+
 import Header from './common/Header';
 import Menubar from './common/Menubar';
 import Footer from './common/Footer';
@@ -32,6 +39,9 @@ function App() {
               <Route path='/bollywood' element={<Bollywood/>}/>
               <Route path='/liftstate' element={<LiftState/>}/>
               <Route path='/emi' element={<EMI/>}/>
+              <Route path='/refclass' element={<RefClass/>}/>
+              <Route path='/reffn' element={<RefFn/>}/>
+              <Route path='/formfn' element={<FormFn/>}/>
             </Routes>
           </div>
           <Right/>
