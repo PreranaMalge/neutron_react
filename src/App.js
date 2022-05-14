@@ -13,6 +13,7 @@ import EMI from './EMI/EMI';
 import RefClass from './RefClass'
 import RefFn from './RefFn';
 import FormFn from './FormFn';
+import FormFnValidation from './FormFnValidation';
 
 
 
@@ -42,6 +43,7 @@ function App() {
               <Route path='/refclass' element={<RefClass/>}/>
               <Route path='/reffn' element={<RefFn/>}/>
               <Route path='/formfn' element={<FormFn/>}/>
+              <Route path='/formfnvalidation' element={<FormFnValidation/>}/>
             </Routes>
           </div>
           <Right/>

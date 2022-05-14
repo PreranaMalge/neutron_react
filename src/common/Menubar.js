@@ -17,6 +17,7 @@ const Menubar = ()=>{
                     <Link to='/refclass' className='nav-link btn btn-outline-success'>RefClass</Link>
                     <Link to='./reffn' className='nav-link btn btn-outline-success'>RefFn</Link>
                     <Link to='./formfn' className='nav-link btn btn-outline-success'>FormFn</Link>
+                    <Link to='./formfnvalidation' className='nav-link btn btn-outline-success'>FormFnValidation</Link>
                 </Navbar>
             </div>
             </div>
