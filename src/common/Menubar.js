@@ -18,6 +18,10 @@ const Menubar = ()=>{
                     <Link to='./reffn' className='nav-link btn btn-outline-success'>RefFn</Link>
                     <Link to='./formfn' className='nav-link btn btn-outline-success'>FormFn</Link>
                     <Link to='./formfnvalidation' className='nav-link btn btn-outline-success'>FormFnValidation</Link>
+                    <Link to ='./hoccountry' className='nav-link btn btn-outline-success'>Hoc_Country</Link>
+                    <Link to='./hocstate' className='nav link btn btn-outline-success'>Hoc_State</Link>
+                    <Link to='./todo' className='nav link btn btn-outline-success'>ToDo</Link>
+                    <Link to='./modal' className='nav link btn btn-outline-success'>Modal</Link>
                 </Navbar>
             </div>
             </div>

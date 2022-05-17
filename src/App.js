@@ -14,8 +14,10 @@ import RefClass from './RefClass'
 import RefFn from './RefFn';
 import FormFn from './FormFn';
 import FormFnValidation from './FormFnValidation';
-
-
+import Hoc_Country from './hoc/Hoc_Country';
+import Hoc_State from './hoc/Hoc_State';
+import ToDo from './ToDo';
+import ModalComp from './Modal';
 
 
 import Header from './common/Header';
@@ -44,6 +46,10 @@ function App() {
               <Route path='/reffn' element={<RefFn/>}/>
               <Route path='/formfn' element={<FormFn/>}/>
               <Route path='/formfnvalidation' element={<FormFnValidation/>}/>
+              <Route path='/hoccountry' element={<Hoc_Country/>}/>
+              <Route path='/hocstate' element={<Hoc_State/>}/>
+              <Route path='/todo' element={<ToDo/>}/>
+              <Route path='/modal' element={<ModalComp />}/>
             </Routes>
           </div>
           <Right/>
