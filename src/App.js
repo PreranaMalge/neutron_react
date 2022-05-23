@@ -16,9 +16,13 @@ import FormFn from './FormFn';
 import FormFnValidation from './FormFnValidation';
 import Hoc_Country from './hoc/Hoc_Country';
 import Hoc_State from './hoc/Hoc_State';
+import Hoc_City from './hoc/Hoc_City';
 import ToDo from './ToDo';
 import ModalComp from './Modal';
-
+import ClassComp from './ClassComp';
+import ContactApp from './ContactApp';
+import Github from './Github';
+import GithubFn from './GithubFn';
 
 import Header from './common/Header';
 import Menubar from './common/Menubar';
@@ -36,6 +40,10 @@ function App() {
           <Left/>
           <div className='col-8 bg-light bg-opacity-75'>
             <Routes>
+              <Route path='/github' element={<Github />}/>
+              <Route path='/githubfn' element={<GithubFn />}/>
+              <Route path='/contactapp' element={<ContactApp />}/>
+              <Route path='/classcomp' element={<ClassComp />}/>
               <Route path='/test' element={<Test />}/>
               <Route path='/home' element={<Home/>}/>
               <Route path='/cricket' element={<Cricket/>}/>
@@ -48,6 +56,7 @@ function App() {
               <Route path='/formfnvalidation' element={<FormFnValidation/>}/>
               <Route path='/hoccountry' element={<Hoc_Country/>}/>
               <Route path='/hocstate' element={<Hoc_State/>}/>
+              <Route path='/hoccity' element={<Hoc_City/>}/>
               <Route path='/todo' element={<ToDo/>}/>
               <Route path='/modal' element={<ModalComp />}/>
             </Routes>
