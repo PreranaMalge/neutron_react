@@ -24,6 +24,8 @@ import ContactApp from './ContactApp';
 import Github from './Github';
 import GithubFn from './GithubFn';
 
+import Parent,{NameContext} from './context/Parent';
+
 import Header from './common/Header';
 import Menubar from './common/Menubar';
 import Footer from './common/Footer';
@@ -40,6 +42,7 @@ function App() {
           <Left/>
           <div className='col-8 bg-light bg-opacity-75'>
             <Routes>
+              <Route path='/parent' element={<Parent />} />
               <Route path='/github' element={<Github />}/>
               <Route path='/githubfn' element={<GithubFn />}/>
               <Route path='/contactapp' element={<ContactApp />}/>

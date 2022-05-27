@@ -23,6 +23,10 @@ body {
     font-size: 40px;
 }
 
+.navbar-expand{
+    flex-wrap: wrap!important;
+}
+
 .my-div-temp {
     width: 400px;
     height: 100px;
