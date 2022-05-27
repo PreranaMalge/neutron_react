@@ -25,6 +25,7 @@ import Github from './Github';
 import GithubFn from './GithubFn';
 
 import Parent,{NameContext} from './context/Parent';
+import HookReducer from './hooks/HookReducer';
 
 import Header from './common/Header';
 import Menubar from './common/Menubar';
@@ -32,16 +33,24 @@ import Footer from './common/Footer';
 import Left from './common/Left';
 import Right from './common/Right';
 
+import DataApp from './common/DataApp';
+import Login from './Login';
+import NotFound from './common/NotFound';
+import ColorApp from './ColorApp';
+
 function App() {
   return (
-    <div className='container'>
+    
       <BrowserRouter>
+      <DataApp>
         <Header/>
         <Menubar/>
         <div className='row'>
           <Left/>
           <div className='col-8 bg-light bg-opacity-75'>
             <Routes>
+
+              <Route path='/hookreducer' element={<HookReducer/>} />
               <Route path='/parent' element={<Parent />} />
               <Route path='/github' element={<Github />}/>
               <Route path='/githubfn' element={<GithubFn />}/>
@@ -62,13 +71,24 @@ function App() {
               <Route path='/hoccity' element={<Hoc_City/>}/>
               <Route path='/todo' element={<ToDo/>}/>
               <Route path='/modal' element={<ModalComp />}/>
+              <Route path='/login' element={<Login />}/>
+              <Route path='/colorapp' element={<ColorApp />}/>
+                <Route path='/apps'>
+                  <Route path='app1' element={<EMI />}/>
+                  <Route path='app2' element={<ColorApp />}/>
+                  <Route path='app3' element={<GithubFn />}/>
+                </Route>
+                <Route path='/' element={<Home />}/>
+                <Route path='/*' element={<NotFound />}/>
+
             </Routes>
           </div>
           <Right/>
         </div>
         <Footer/>
+        </DataApp>
       </BrowserRouter>
-    </div>
+    
   );
 }
 

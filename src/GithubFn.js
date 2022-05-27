@@ -1,9 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import { DataAppContext } from './common/DataApp';
 
 const GithubFn = () => {
     const [issuesList, setIssuesList]  = useState([]);
     const [pageNum, setPageNum] = useState(1);
     const [buttons, setButtons] = useState([1,2,3,4,5,6,7,8,9,10]);
+
+    const loginDetails = useContext(DataAppContext);
+    console.log(loginDetails);
 
     // const callApi = () => {
     //     fetch(`https://api.github.com/repositories/1296269/issues?page=${pageNum}&per_page=5`)
@@ -38,6 +42,7 @@ const GithubFn = () => {
 
     useEffect(() => {
         //callApi();
+        console.log('useEffect of gitfn got triggered...');
     })
     //componentDidMount and componentDidUpdate - trigger every time - re-render
 

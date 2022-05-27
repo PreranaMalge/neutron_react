@@ -6,6 +6,7 @@ const NameContext = createContext();
 const Parent = ()=>{
     const [name,setName] = useState('Mr.Abc');
     const [count,setCount] = useState(0);
+    console.log('api key - ',process.env.REACT_API_NAME);
 
     return(
         <>
